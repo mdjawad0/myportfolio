@@ -79,6 +79,22 @@ h2 {
   margin-left: 20px;
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(rgba(0, 212, 255, 1) 100%);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #555;
+}
+
+
 .education-card {
   display: flex;
   flex-direction: row;
@@ -94,6 +110,28 @@ h2 {
   max-width: 200px;
   max-height: 120px;
 }
+
+.download-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.download-link:hover {
+  color: #0056b3;
+}
+
+.download-link::after {
+  content: " \2193"; /* Unicode downward arrow */
+}
+
+.download-link:hover::after {
+  content: " \2193"; /* Unicode downward arrow */
+  transform: rotate(180deg);
+}
+
+
+
 
 
 .job {
